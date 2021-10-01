@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "lemonmilk";
+  src: url(../fonts/LemonMilkbold.otf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lemonmilk";
+  src: url(../fonts/LemonMilk.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lemonmilk";
+  src: url(../fonts/LemonMilkbolditalic.otf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "lemonmilk";
+  src: url(../fonts/LemonMilkitalic.otf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "lemonmilk";
+  src: url(../fonts/LemonMilklight.otf) format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lemonmilk";
+  src: url(../fonts/LemonMilklightitalic.otf) format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+html {
+  font-family: "lemonmilk", "Inter", sans-serif;
+  font-size: 62.5%;
+}
+
+.nav {
+  &__brand {
+    &__text {
+      font-size: 3.6rem;
+    }
+  }
+  &__list {
+    &__item {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.header .heading__1 {
+  font-size: 9.6rem;
+  line-height: 10rem;
+  color: white;
+  text-shadow: $header-text-shadow;
+}
+
+.header {
+  & .heading__4 {
+    color: white;
+    text-shadow: $header-name-text-shadow;
+    font-size: 1.8rem;
+    letter-spacing: 9%;
+  }
+}
+
+.heading-3 {
+  font-size: 3.6rem;
+  //   line-height: 1.05px;
+  letter-spacing: 0.2rem;
+}
+.paragraph-default {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 166%;
+  letter-spacing: 0.2rem;
+}
