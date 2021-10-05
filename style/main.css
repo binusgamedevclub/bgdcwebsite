@@ -137,8 +137,8 @@ html {
   width: 100%;
   height: 80rem;
   background: linear-gradient(241.55deg, #ff8a00 36.82%, #ffc700 74.5%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 75%, 0 90%);
-          clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 75%, 0 90%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,14 +151,14 @@ html {
 }
 
 .header__title {
-  -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
 }
 
 .header__pictures {
   width: 35%;
-  -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
 }
 
 .section-about {

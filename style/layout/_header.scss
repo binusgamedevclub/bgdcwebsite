@@ -6,15 +6,17 @@
     $color-primary 36.82%,
     $color-primary-dark 74.5%
   );
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 75%, 0 90%);
+  //polygon(0 0, 100% 0, 100% 90%, 50% 75%, 0 90%);
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   &__title {
-    transform: translateY(-30%);
+    transform: translateY(-20%);
   }
   &__pictures {
     width: 35%;
-    transform: translateY(-30%);
+    transform: translateY(-20%);
   }
 }
