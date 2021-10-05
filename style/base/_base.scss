@@ -6,6 +6,10 @@
   box-sizing: inherit;
 }
 
+html {
+  //default 62.5%
+  font-size: $base-default-font-size;
+}
 body {
   box-sizing: border-box;
 }
