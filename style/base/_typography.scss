@@ -39,7 +39,6 @@
 
 html {
   font-family: "lemonmilk", "Inter", sans-serif;
-  font-size: 62.5%;
 }
 
 .nav {
@@ -51,6 +50,7 @@ html {
   &__list {
     &__item {
       font-size: $default-font-size;
+      font-weight: 400;
     }
   }
 }
@@ -75,6 +75,17 @@ html {
   font-size: $medium-font-size;
   //   line-height: 1.05px;
   letter-spacing: 0.2rem;
+
+  &--underline {
+    &::after {
+      content: "";
+      display: block;
+      width: 25.5rem;
+      height: 10px;
+      background: linear-gradient(85.98deg, #ff6b00 11.55%, #ffb800 91.18%);
+      border-radius: 70px;
+    }
+  }
 }
 .paragraph-default {
   font-family: "Inter", sans-serif;
