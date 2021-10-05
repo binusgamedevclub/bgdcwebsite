@@ -7,6 +7,10 @@
           box-sizing: inherit;
 }
 
+html {
+  font-size: 50%;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -56,7 +60,6 @@ body {
 
 html {
   font-family: "lemonmilk", "Inter", sans-serif;
-  font-size: 62.5%;
 }
 
 .nav__brand__text {
@@ -65,6 +68,7 @@ html {
 
 .nav__list__item {
   font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .header .heading__1 {
@@ -84,6 +88,15 @@ html {
 .heading-3 {
   font-size: 3.6rem;
   letter-spacing: 0.2rem;
+}
+
+.heading-3--underline::after {
+  content: "";
+  display: block;
+  width: 25.5rem;
+  height: 10px;
+  background: linear-gradient(85.98deg, #ff6b00 11.55%, #ffb800 91.18%);
+  border-radius: 70px;
 }
 
 .paragraph-default {
@@ -114,7 +127,6 @@ html {
 .nav__brand__text {
   text-decoration: none;
   color: white;
-  text-shadow: 0px 1.5px 2px rgba(0, 0, 0, 0.2);
 }
 
 .nav__list {
@@ -125,12 +137,10 @@ html {
 .nav__list__item {
   display: inline-block;
   color: white;
-  text-shadow: 0px 1.5px 2px rgba(0, 0, 0, 0.2);
-  font-weight: lighter;
 }
 
 .nav__list__item:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 5rem;
 }
 
 .header {
@@ -163,19 +173,11 @@ html {
 
 .section-about {
   width: 100%;
+  margin-top: 10rem;
 }
 
 .section-about .heading-3 {
   margin-bottom: 4rem;
-}
-
-.section-about .heading-3::after {
-  content: "";
-  display: block;
-  width: 28rem;
-  height: 10px;
-  background: linear-gradient(85.98deg, #ff6b00 11.55%, #ffb800 91.18%);
-  border-radius: 70px;
 }
 
 .section-about__content {
@@ -193,7 +195,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 20rem;
+  padding: 0 35rem;
   text-align: center;
 }
 
@@ -216,7 +218,7 @@ html {
   width: fit-content;
 }
 
-.section-about__content .misi-content-container .hexagon-content.down {
+.section-about__content .misi-content-container .hexagon-content--down {
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
 }
@@ -226,6 +228,6 @@ html {
 }
 
 .section-about__content .misi-content-container img {
-  width: 80%;
+  width: 70%;
 }
 /*# sourceMappingURL=main.css.map */
