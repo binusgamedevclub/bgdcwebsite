@@ -45,18 +45,18 @@ html {
 .nav {
   &__brand {
     &__text {
-      font-size: 3.6rem;
+      font-size: $medium-font-size;
     }
   }
   &__list {
     &__item {
-      font-size: 1.8rem;
+      font-size: $default-font-size;
     }
   }
 }
 
 .header .heading__1 {
-  font-size: 9.6rem;
+  font-size: $large-font-size;
   line-height: 10rem;
   color: white;
   text-shadow: $header-text-shadow;
@@ -66,19 +66,19 @@ html {
   & .heading__4 {
     color: white;
     text-shadow: $header-name-text-shadow;
-    font-size: 1.8rem;
+    font-size: $default-font-size;
     letter-spacing: 9%;
   }
 }
 
 .heading-3 {
-  font-size: 3.6rem;
+  font-size: $medium-font-size;
   //   line-height: 1.05px;
   letter-spacing: 0.2rem;
 }
 .paragraph-default {
   font-family: "Inter", sans-serif;
-  font-size: 1.8rem;
+  font-size: $default-font-size;
   font-weight: 400;
   line-height: 166%;
   letter-spacing: 0.2rem;
