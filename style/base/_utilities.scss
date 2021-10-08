@@ -1,0 +1,57 @@
+.mb-sm {
+  margin-bottom: $small;
+}
+.mt-sm {
+  margin-top: $small;
+}
+
+.mb-md {
+  margin-bottom: $medium;
+}
+.mt-md {
+  margin-top: $medium;
+}
+
+.mb-large {
+  margin-bottom: $large;
+}
+.mt-large {
+  margin-top: $large;
+}
+
+.ms-sm {
+  margin-left: $small;
+}
+.me-sm {
+  margin-right: $small;
+}
+
+.ms-md {
+  margin-left: $medium;
+}
+.me-md {
+  margin-right: $medium;
+}
+
+.ms-large {
+  margin-left: $large;
+}
+.me-large {
+  margin-right: $large;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.row-rev {
+  flex-direction: row-reverse;
+}
+.text-align-start {
+  text-align: start;
+}
+
+.text-align-end {
+  text-align: end;
+}

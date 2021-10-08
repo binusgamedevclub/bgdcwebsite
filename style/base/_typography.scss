@@ -62,6 +62,12 @@ html {
   text-shadow: $header-text-shadow;
 }
 
+.heading__4 {
+  font-size: $medium-low-font-size;
+  //   line-height: 1.05px;
+  letter-spacing: 0.2rem;
+}
+
 .header {
   & .heading__4 {
     color: white;

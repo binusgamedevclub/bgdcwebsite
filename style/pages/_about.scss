@@ -13,6 +13,10 @@
     padding: 0 35rem;
     text-align: center;
 
+    &--mt {
+      margin-top: 25rem !important;
+    }
+
     &:not(:last-child) {
       margin-bottom: 15rem;
     }
@@ -32,6 +36,24 @@
       }
       & img {
         width: 70%;
+      }
+    }
+  }
+  .aktivitas-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+
+    & img {
+      margin-right: $large;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      & img {
+        margin-left: $large !important;
+        margin-right: 0;
       }
     }
   }

@@ -78,6 +78,11 @@ html {
   text-shadow: 0px 5px 0px rgba(90, 39, 10, 0.3);
 }
 
+.heading__4 {
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+}
+
 .header .heading__4 {
   color: white;
   text-shadow: 0px 2.25px 1px rgba(90, 39, 10, 0.4);
@@ -105,6 +110,79 @@ html {
   font-weight: 400;
   line-height: 166%;
   letter-spacing: 0.2rem;
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mt-sm {
+  margin-top: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 4rem;
+}
+
+.mt-md {
+  margin-top: 4rem;
+}
+
+.mb-large {
+  margin-bottom: 8rem;
+}
+
+.mt-large {
+  margin-top: 8rem;
+}
+
+.ms-sm {
+  margin-left: 2rem;
+}
+
+.me-sm {
+  margin-right: 2rem;
+}
+
+.ms-md {
+  margin-left: 4rem;
+}
+
+.me-md {
+  margin-right: 4rem;
+}
+
+.ms-large {
+  margin-left: 8rem;
+}
+
+.me-large {
+  margin-right: 8rem;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.row-rev {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.text-align-start {
+  text-align: start;
+}
+
+.text-align-end {
+  text-align: end;
 }
 
 .nav {
@@ -199,6 +277,10 @@ html {
   text-align: center;
 }
 
+.section-about__content--mt {
+  margin-top: 25rem !important;
+}
+
 .section-about__content:not(:last-child) {
   margin-bottom: 15rem;
 }
@@ -229,5 +311,34 @@ html {
 
 .section-about__content .misi-content-container img {
   width: 70%;
+}
+
+.section-about .aktivitas-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: start;
+}
+
+.section-about .aktivitas-container img {
+  margin-right: 8rem;
+}
+
+.section-about .aktivitas-container--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-about .aktivitas-container--reverse img {
+  margin-left: 8rem !important;
+  margin-right: 0;
 }
 /*# sourceMappingURL=main.css.map */
