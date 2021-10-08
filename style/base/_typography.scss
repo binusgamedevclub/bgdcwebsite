@@ -38,7 +38,7 @@
 }
 
 html {
-  font-family: "lemonmilk", "Inter", sans-serif;
+  font-family: "lemonmilk", "Ubuntu", "Inter", sans-serif;
 }
 
 .nav {
@@ -61,20 +61,8 @@ html {
   color: white;
   text-shadow: $header-text-shadow;
 }
-
-.heading__4 {
-  font-size: $medium-low-font-size;
-  //   line-height: 1.05px;
-  letter-spacing: 0.2rem;
-}
-
-.header {
-  & .heading__4 {
-    color: white;
-    text-shadow: $header-name-text-shadow;
-    font-size: $default-font-size;
-    letter-spacing: 9%;
-  }
+.heading-2 {
+  font-size: 4.8rem;
 }
 
 .heading-3 {
@@ -93,10 +81,31 @@ html {
     }
   }
 }
+
+.heading__4 {
+  font-size: $medium-low-font-size;
+  //   line-height: 1.05px;
+  letter-spacing: 0.2rem;
+}
+
+.header {
+  & .heading__4 {
+    color: white;
+    text-shadow: $header-name-text-shadow;
+    font-size: $default-font-size;
+    letter-spacing: 9%;
+  }
+}
+
 .paragraph-default {
   font-family: "Inter", sans-serif;
   font-size: $default-font-size;
   font-weight: 400;
   line-height: 166%;
   letter-spacing: 0.2rem;
+}
+.paragraph-default-2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: $default-font-size;
+  font-weight: 400;
 }

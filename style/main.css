@@ -59,7 +59,7 @@ body {
 }
 
 html {
-  font-family: "lemonmilk", "Inter", sans-serif;
+  font-family: "lemonmilk", "Ubuntu", "Inter", sans-serif;
 }
 
 .nav__brand__text {
@@ -78,16 +78,8 @@ html {
   text-shadow: 0px 5px 0px rgba(90, 39, 10, 0.3);
 }
 
-.heading__4 {
-  font-size: 2.4rem;
-  letter-spacing: 0.2rem;
-}
-
-.header .heading__4 {
-  color: white;
-  text-shadow: 0px 2.25px 1px rgba(90, 39, 10, 0.4);
-  font-size: 1.8rem;
-  letter-spacing: 9%;
+.heading-2 {
+  font-size: 4.8rem;
 }
 
 .heading-3 {
@@ -104,12 +96,30 @@ html {
   border-radius: 70px;
 }
 
+.heading__4 {
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.header .heading__4 {
+  color: white;
+  text-shadow: 0px 2.25px 1px rgba(90, 39, 10, 0.4);
+  font-size: 1.8rem;
+  letter-spacing: 9%;
+}
+
 .paragraph-default {
   font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 166%;
   letter-spacing: 0.2rem;
+}
+
+.paragraph-default-2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .mb-sm {
@@ -183,6 +193,16 @@ html {
 
 .text-align-end {
   text-align: end;
+}
+
+.button-primary {
+  text-decoration: none;
+  font-size: 1.8rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffb341), to(#ffd644));
+  background: linear-gradient(to bottom, #ffb341, #ffd644);
+  color: white;
+  border-radius: 4rem;
+  padding: 1.5rem 3.5rem;
 }
 
 .nav {
@@ -340,5 +360,150 @@ html {
 .section-about .aktivitas-container--reverse img {
   margin-left: 8rem !important;
   margin-right: 0;
+}
+
+.section-join {
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 25rem;
+  color: #494949;
+  background-color: whitesmoke;
+}
+
+.section-join .heading-2 {
+  color: #5a5a5a;
+}
+
+.section-join__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20rem;
+}
+
+.section-join__head .button-container > *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.section-join__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-join__container--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.section-join__container--reverse .section-join__content {
+  margin-left: 0rem !important;
+  margin-right: 8rem !important;
+}
+
+.section-join__container img {
+  width: 40%;
+  background-size: cover;
+}
+
+.section-join__container .section-join__content {
+  margin-left: 8rem;
+}
+
+.section-join__container .section-join__content p {
+  padding-right: 25rem;
+}
+
+.section-join__container .section-join__content > *:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.section-join .aktivis-review {
+  display: -ms-grid;
+  display: grid;
+  gap: 3rem;
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.section-join .aktivis-review p {
+  font-weight: 300;
+}
+
+.section-join .aktivis-review .review-card {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 1.5rem;
+  padding: 3rem;
+}
+
+.section-join .aktivis-review .review-card__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.section-join .aktivis-review .review-card__profile img {
+  border-radius: 50%;
+  width: 5rem;
+}
+
+.section-join .aktivis-review .review-card__profile__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-join .aktivis-review .review-card__profile__detail .profile-name {
+  font-weight: 500;
+  color: #494949;
+  font-size: 1.5rem;
+}
+
+.section-join .aktivis-review .review-card__profile__detail .profile-jabatan {
+  font-weight: 400;
+  color: #494949;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,103 @@
+.section-join {
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 25rem;
+  color: $color-text-paragraph;
+  background-color: whitesmoke;
+  & .heading-2 {
+    color: $color-text-heading;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20rem;
+    & .button-container > * {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    margin: 15rem 0;
+    align-items: center;
+    justify-content: center;
+
+    &--reverse {
+      flex-direction: row-reverse;
+      & .section-join__content {
+        margin-left: 0rem !important;
+        margin-right: 8rem !important;
+      }
+    }
+
+    & img {
+      width: 40%;
+
+      background-size: cover;
+    }
+    & .section-join__content {
+      margin-left: 8rem;
+      & p {
+        padding-right: 25rem;
+      }
+      & > *:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  & .aktivis-review {
+    display: grid;
+
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    & p {
+      font-weight: 300;
+    }
+
+    & .review-card {
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: space-between;
+      height: fit-content;
+      background-color: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 1.5rem;
+      padding: 3rem;
+      &__profile {
+        display: flex;
+        margin-top: 2rem;
+        & img {
+          border-radius: 50%;
+          width: 5rem;
+        }
+        &__detail {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1rem;
+
+          justify-content: center;
+          & .profile-name {
+            font-weight: 500;
+            color: $color-text-paragraph;
+            font-size: 1.5rem;
+          }
+
+          & .profile-jabatan {
+            font-weight: 400;
+            color: $color-text-paragraph;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
