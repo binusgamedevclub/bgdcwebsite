@@ -64,9 +64,6 @@
     }
 
     & .review-card {
-      //   display: flex;
-      //   flex-direction: column;
-      //   justify-content: space-between;
       height: fit-content;
       background-color: white;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
@@ -86,15 +83,15 @@
 
           justify-content: center;
           & .profile-name {
-            font-weight: 500;
+            font-weight: 600;
             color: $color-text-paragraph;
-            font-size: 1.5rem;
+            font-size: $default-font-size;
           }
 
           & .profile-jabatan {
             font-weight: 400;
             color: $color-text-paragraph;
-            font-size: 1.5rem;
+            font-size: $default-font-size;
           }
         }
       }

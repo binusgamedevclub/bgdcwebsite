@@ -71,7 +71,7 @@ html {
   font-weight: 400;
 }
 
-.header .heading__1 {
+.heading__1 {
   font-size: 9.6rem;
   line-height: 10rem;
   color: white;
@@ -101,7 +101,7 @@ html {
   letter-spacing: 0.2rem;
 }
 
-.header .heading__4 {
+.heading__5 {
   color: white;
   text-shadow: 0px 2.25px 1px rgba(90, 39, 10, 0.4);
   font-size: 1.8rem;
@@ -120,6 +120,10 @@ html {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
+}
+
+.button-primary {
+  font-size: 1.8rem;
 }
 
 .mb-sm {
@@ -197,7 +201,6 @@ html {
 
 .button-primary {
   text-decoration: none;
-  font-size: 1.8rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffb341), to(#ffd644));
   background: linear-gradient(to bottom, #ffb341, #ffd644);
   color: white;
@@ -496,14 +499,14 @@ html {
 }
 
 .section-join .aktivis-review .review-card__profile__detail .profile-name {
-  font-weight: 500;
+  font-weight: 600;
   color: #494949;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .section-join .aktivis-review .review-card__profile__detail .profile-jabatan {
   font-weight: 400;
   color: #494949;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=main.css.map */
