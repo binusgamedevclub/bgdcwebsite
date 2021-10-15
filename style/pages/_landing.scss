@@ -1,3 +1,123 @@
+/*=========Acara BGDC==========*/
+
+.section-acara-bgdc {
+  width: 100%;
+  background: url("../assets/img/landing/bg-stuff-acara-bot.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  padding: 20rem 55rem;
+
+  & .acara-bgdc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu";
+    & h2,
+    & h4 {
+      color: $color-text-heading;
+    }
+    & p {
+      color: $color-text-paragraph;
+    }
+    & h3 {
+      color: $color-text-heading;
+      font-weight: 500;
+    }
+
+    /* Acara BGDC container (foto dan judul acara */
+    & .card-list {
+      margin: 10rem 0;
+
+      & .card-container {
+        display: flex;
+        width: inherit;
+        justify-self: flex-start;
+        align-self: flex-start;
+
+        &:not(:last-child) {
+          margin-bottom: 4rem;
+        }
+        & .card-image {
+          border-radius: 1rem;
+          margin-right: 3rem;
+          width: 30rem;
+          background-size: cover;
+        }
+
+        & .card {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          & h3 {
+            margin-bottom: 1rem;
+          }
+          & p {
+            letter-spacing: 2px;
+            font-weight: 500;
+            color: $color-text-heading;
+          }
+
+          &__tag {
+            background-color: #fff1bf;
+            border-radius: 25px;
+            color: #bd7635;
+            padding: 0.75rem 1.5rem;
+            font-size: $default-font-size;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+
+    & .program-kerja {
+      margin-top: 8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+      }
+      &__item {
+        background-color: #fff1bf;
+        color: #bd7635;
+        border-radius: 25px;
+        margin: 1.2rem 0.5rem;
+        font-size: $default-font-size;
+        font-weight: 500;
+        padding: 1rem 2rem;
+      }
+    }
+
+    & .partner-bgdc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10rem;
+    }
+
+    & .partner-photo {
+      display: flex;
+      justify-content: space-evenly;
+      & img {
+        width: 15rem;
+      }
+    }
+  }
+}
+/*======END Acara BGDC==========*/
+
+/*======JOIN SECTION==========*/
 .section-join {
   font-family: "Ubuntu", sans-serif;
   width: 100%;
@@ -6,7 +126,7 @@
   align-items: center;
   padding: 5rem 25rem;
   color: $color-text-paragraph;
-  background-color: whitesmoke;
+  background-color: $background-grayish;
   & .heading-2 {
     color: $color-text-heading;
   }

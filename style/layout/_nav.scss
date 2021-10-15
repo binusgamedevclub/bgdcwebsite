@@ -27,3 +27,48 @@
     }
   }
 }
+
+.navigasi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 15%;
+}
+
+.Navlist :link {
+  text-decoration: none;
+  color: black;
+}
+
+.Navlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AboutUs {
+  padding-right: 10%;
+}
+
+.Events {
+  padding-right: 10%;
+}
+
+.Products {
+  padding-right: 10%;
+}
+
+.Blog {
+  padding-right: 10%;
+}
+
+.Registration {
+  padding-right: 10%;
+}
+
+.ContactUs {
+  padding-right: 10%;
+}

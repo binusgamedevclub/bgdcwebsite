@@ -74,20 +74,17 @@ html {
 .heading__1 {
   font-size: 9.6rem;
   line-height: 10rem;
-  color: white;
-  text-shadow: 0px 5px 0px rgba(90, 39, 10, 0.3);
 }
 
-.heading-2 {
+.heading__2 {
   font-size: 4.8rem;
 }
 
-.heading-3 {
+.heading__3 {
   font-size: 3.6rem;
-  letter-spacing: 0.2rem;
 }
 
-.heading-3--underline::after {
+.heading__3--underline::after {
   content: "";
   display: block;
   width: 25.5rem;
@@ -98,7 +95,6 @@ html {
 
 .heading__4 {
   font-size: 2.4rem;
-  letter-spacing: 0.2rem;
 }
 
 .heading__5 {
@@ -205,7 +201,7 @@ html {
   background: linear-gradient(to bottom, #ffb341, #ffd644);
   color: white;
   border-radius: 4rem;
-  padding: 1.5rem 3.5rem;
+  padding: 1.2rem 2.5rem;
 }
 
 .nav {
@@ -242,6 +238,66 @@ html {
 
 .nav__list__item:not(:last-child) {
   margin-right: 5rem;
+}
+
+.navigasi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 15%;
+}
+
+.Navlist :link {
+  text-decoration: none;
+  color: black;
+}
+
+.Navlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.AboutUs {
+  padding-right: 10%;
+}
+
+.Events {
+  padding-right: 10%;
+}
+
+.Products {
+  padding-right: 10%;
+}
+
+.Blog {
+  padding-right: 10%;
+}
+
+.Registration {
+  padding-right: 10%;
+}
+
+.ContactUs {
+  padding-right: 10%;
 }
 
 .header {
@@ -365,6 +421,182 @@ html {
   margin-right: 0;
 }
 
+/*=========Acara BGDC==========*/
+.section-acara-bgdc {
+  width: 100%;
+  background: url("../assets/img/landing/bg-stuff-acara-bot.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  padding: 20rem 55rem;
+}
+
+.section-acara-bgdc .acara-bgdc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Ubuntu";
+  /* Acara BGDC container (foto dan judul acara */
+}
+
+.section-acara-bgdc .acara-bgdc h2,
+.section-acara-bgdc .acara-bgdc h4 {
+  color: #5a5a5a;
+}
+
+.section-acara-bgdc .acara-bgdc p {
+  color: #494949;
+}
+
+.section-acara-bgdc .acara-bgdc h3 {
+  color: #5a5a5a;
+  font-weight: 500;
+}
+
+.section-acara-bgdc .acara-bgdc .card-list {
+  margin: 10rem 0;
+}
+
+.section-acara-bgdc .acara-bgdc .card-list .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: inherit;
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.section-acara-bgdc .acara-bgdc .card-list .card-container:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.section-acara-bgdc .acara-bgdc .card-list .card-container .card-image {
+  border-radius: 1rem;
+  margin-right: 3rem;
+  width: 30rem;
+  background-size: cover;
+}
+
+.section-acara-bgdc .acara-bgdc .card-list .card-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section-acara-bgdc .acara-bgdc .card-list .card-container .card h3 {
+  margin-bottom: 1rem;
+}
+
+.section-acara-bgdc .acara-bgdc .card-list .card-container .card p {
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #5a5a5a;
+}
+
+.section-acara-bgdc .acara-bgdc .card-list .card-container .card__tag {
+  background-color: #fff1bf;
+  border-radius: 25px;
+  color: #bd7635;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.section-acara-bgdc .acara-bgdc .program-kerja {
+  margin-top: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-acara-bgdc .acara-bgdc .program-kerja__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-acara-bgdc .acara-bgdc .program-kerja__item {
+  background-color: #fff1bf;
+  color: #bd7635;
+  border-radius: 25px;
+  margin: 1.2rem 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+}
+
+.section-acara-bgdc .acara-bgdc .partner-bgdc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10rem;
+}
+
+.section-acara-bgdc .acara-bgdc .partner-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section-acara-bgdc .acara-bgdc .partner-photo img {
+  width: 15rem;
+}
+
+/*======END Acara BGDC==========*/
+/*======JOIN SECTION==========*/
 .section-join {
   font-family: "Ubuntu", sans-serif;
   width: 100%;
@@ -380,7 +612,7 @@ html {
           align-items: center;
   padding: 5rem 25rem;
   color: #494949;
-  background-color: whitesmoke;
+  background-color: #f9f9f9;
 }
 
 .section-join .heading-2 {

@@ -58,17 +58,14 @@ html {
 .heading__1 {
   font-size: $large-font-size;
   line-height: 10rem;
-  color: white;
-  text-shadow: $header-text-shadow;
 }
-.heading-2 {
+.heading__2 {
   font-size: $medium-large-font-size;
 }
 
-.heading-3 {
+.heading__3 {
   font-size: $medium-font-size;
   //   line-height: 1.05px;
-  letter-spacing: 0.2rem;
 
   &--underline {
     &::after {
@@ -85,7 +82,6 @@ html {
 .heading__4 {
   font-size: $medium-low-font-size;
   //   line-height: 1.05px;
-  letter-spacing: 0.2rem;
 }
 
 .heading__5 {
