@@ -30,7 +30,7 @@
     /* Acara BGDC container (foto dan judul acara */
     & .card-list {
       margin: 10rem 0;
-
+      align-self: flex-start;
       & .card-container {
         display: flex;
         width: inherit;
