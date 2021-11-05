@@ -1,3 +1,18 @@
+/*
+0 - 600             (Phone)
+600 - 900px         Tablet (Portrait)
+900 - 1200px        Tablet (Landscape)
+1200 - 1800px       (Normal)
+1800px++            (Big Screen)
+*/
+/*
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+*/
 *,
 *::before,
 *::after {
@@ -9,6 +24,24 @@
 
 html {
   font-size: 50%;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 30%;
+  }
 }
 
 body {
@@ -59,7 +92,7 @@ body {
 }
 
 html {
-  font-family: "lemonmilk", "Ubuntu", "Inter", sans-serif;
+  font-family: "Ubuntu", "lemonmilk", "Inter", sans-serif;
 }
 
 .nav__brand__text {
@@ -204,6 +237,12 @@ html {
   padding: 1.2rem 2.5rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .button-primary {
+    padding: 1.2rem 2rem;
+  }
+}
+
 .nav {
   width: 100%;
   height: 4rem;
@@ -303,7 +342,7 @@ html {
 .header {
   width: 100%;
   height: 80rem;
-  background: linear-gradient(241.55deg, #ff8a00 36.82%, #ffc700 74.5%);
+  background: linear-gradient(241.55deg, #ffb341 36.82%, #ffd644 74.5%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
   display: -webkit-box;
@@ -421,6 +460,87 @@ html {
   margin-right: 0;
 }
 
+/*=========KEGITATAN KAMI==========*/
+.section-kegiatan-kami {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-kegiatan-kami {
+    width: 90%;
+  }
+}
+
+.section-kegiatan-kami .section-header > p {
+  margin-top: 2rem;
+}
+
+.section-kegiatan-kami h2 {
+  color: #494949;
+}
+
+.section-kegiatan-kami h4 {
+  color: #494949;
+}
+
+.section-kegiatan-kami p {
+  color: #5a5a5a;
+}
+
+.section-kegiatan-kami .section-content {
+  display: -ms-grid;
+  display: grid;
+  width: inherit;
+  margin: 10rem auto;
+  gap: 8rem;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-kegiatan-kami .section-content__hexagon svg {
+    width: 23rem;
+  }
+}
+
+.section-kegiatan-kami .section-content__hexagon > p {
+  margin-top: 1rem;
+}
+
+.section-kegiatan-kami .section-content__hexagon > h4 {
+  margin-top: 4rem;
+}
+
+.section-kegiatan-kami .section-footer {
+  width: inherit;
+  display: -ms-grid;
+  display: grid;
+  margin: 10rem auto;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.section-kegiatan-kami .section-footer__content:not(:last-child) {
+  border-right: 2px solid #d7d7d7;
+}
+
+.section-kegiatan-kami .section-footer__content h4 {
+  font-weight: 500;
+}
+
+.section-kegiatan-kami .section-footer__content h2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffb341), to(#ffd644));
+  background-image: linear-gradient(to bottom, #ffb341, #ffd644);
+  display: inline-block;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 2rem;
+}
+
+/*=========KEGITATAN KAMI==========*/
 /*=========Acara BGDC==========*/
 .section-acara-bgdc {
   width: 100%;
@@ -429,7 +549,21 @@ html {
   background-repeat: no-repeat;
   background-position: bottom;
   position: relative;
-  padding: 20rem 55rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 20rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-acara-bgdc {
+    padding-bottom: 15rem;
+  }
 }
 
 .section-acara-bgdc .acara-bgdc {
@@ -452,22 +586,23 @@ html {
 
 .section-acara-bgdc .acara-bgdc h2,
 .section-acara-bgdc .acara-bgdc h4 {
-  color: #5a5a5a;
-}
-
-.section-acara-bgdc .acara-bgdc p {
   color: #494949;
 }
 
-.section-acara-bgdc .acara-bgdc h3 {
+.section-acara-bgdc .acara-bgdc p {
   color: #5a5a5a;
+}
+
+.section-acara-bgdc .acara-bgdc h3 {
+  color: #494949;
   font-weight: 500;
 }
 
 .section-acara-bgdc .acara-bgdc .card-list {
   margin: 10rem 0;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .section-acara-bgdc .acara-bgdc .card-list .card-container {
@@ -475,9 +610,6 @@ html {
   display: -ms-flexbox;
   display: flex;
   width: inherit;
-  justify-self: flex-start;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
 .section-acara-bgdc .acara-bgdc .card-list .card-container:not(:last-child) {
@@ -511,7 +643,7 @@ html {
 .section-acara-bgdc .acara-bgdc .card-list .card-container .card p {
   letter-spacing: 2px;
   font-weight: 500;
-  color: #5a5a5a;
+  color: #494949;
 }
 
 .section-acara-bgdc .acara-bgdc .card-list .card-container .card__tag {
@@ -536,6 +668,13 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-acara-bgdc .acara-bgdc .program-kerja {
+    width: 80%;
+  }
 }
 
 .section-acara-bgdc .acara-bgdc .program-kerja__list {
@@ -597,6 +736,10 @@ html {
   width: 15rem;
 }
 
+.section-acara-bgdc .acara-bgdc .partner-photo img:not(:last-child) {
+  margin-right: 3rem;
+}
+
 /*======END Acara BGDC==========*/
 /*======JOIN SECTION==========*/
 .section-join {
@@ -613,12 +756,30 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 5rem 25rem;
-  color: #494949;
+  color: #5a5a5a;
   background-color: #f9f9f9;
 }
 
+@media only screen and (max-width: 75em) {
+  .section-join {
+    padding: 5rem 15rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-join {
+    padding: 5rem 10rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-join {
+    padding: 5rem 5rem;
+  }
+}
+
 .section-join .heading-2 {
-  color: #5a5a5a;
+  color: #494949;
 }
 
 .section-join__head {
@@ -654,6 +815,16 @@ html {
           justify-content: center;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .section-join__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 .section-join__container--reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -666,21 +837,72 @@ html {
   margin-right: 8rem !important;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .section-join__container--reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .section-join__container img {
-  width: 40%;
+  width: 50rem;
   background-size: cover;
+}
+
+@media only screen and (max-width: 75em) {
+  .section-join__container img {
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-join__container img {
+    width: 35rem;
+  }
 }
 
 .section-join__container .section-join__content {
   margin-left: 8rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .section-join__container .section-join__content {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-join__container .section-join__content h2 {
+    margin-top: 3rem;
+  }
+}
+
 .section-join__container .section-join__content p {
-  padding-right: 25rem;
+  padding-right: 5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-join__container .section-join__content p {
+    padding-right: 0rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-join__container .section-join__content p {
+    padding-right: 0rem;
+  }
 }
 
 .section-join__container .section-join__content > *:not(:last-child) {
   margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-join__container .section-join__content > *:not(:last-child) {
+    margin-bottom: 5rem;
+  }
 }
 
 .section-join .aktivis-review {
@@ -734,13 +956,13 @@ html {
 
 .section-join .aktivis-review .review-card__profile__detail .profile-name {
   font-weight: 600;
-  color: #494949;
+  color: #5a5a5a;
   font-size: 1.8rem;
 }
 
 .section-join .aktivis-review .review-card__profile__detail .profile-jabatan {
   font-weight: 400;
-  color: #494949;
+  color: #5a5a5a;
   font-size: 1.8rem;
 }
 /*# sourceMappingURL=main.css.map */

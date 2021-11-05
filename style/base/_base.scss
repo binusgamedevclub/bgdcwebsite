@@ -10,6 +10,16 @@ html {
   //default 62.5%
   //50%
   font-size: $base-default-font-size;
+
+  @include respond(tab-land) {
+    font-size: 45%;
+  }
+  @include respond(tab-land) {
+    font-size: 40%;
+  }
+  @include respond(phone) {
+    font-size: 30%;
+  }
 }
 body {
   box-sizing: border-box;

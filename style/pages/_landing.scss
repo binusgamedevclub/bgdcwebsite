@@ -1,3 +1,72 @@
+/*=========KEGITATAN KAMI==========*/
+.section-kegiatan-kami {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  @include respond(tab-port) {
+    width: 90%;
+  }
+  & .section-header > p {
+    margin-top: 2rem;
+  }
+  & h2 {
+    color: $color-text-dark;
+  }
+  & h4 {
+    color: $color-text-dark;
+  }
+  & p {
+    color: $color-text-light;
+  }
+  & .section-content {
+    display: grid;
+    width: inherit;
+    margin: 10rem auto;
+    gap: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    &__hexagon svg {
+      @include respond(phone) {
+        width: 23rem;
+      }
+    }
+    &__hexagon > p {
+      margin-top: 1rem;
+    }
+    &__hexagon > h4 {
+      margin-top: 4rem;
+    }
+  }
+  & .section-footer {
+    width: inherit;
+    display: grid;
+    margin: 10rem auto;
+    grid-template-columns: repeat(3, 1fr);
+    &__content {
+      &:not(:last-child) {
+        border-right: 2px solid #d7d7d7;
+      }
+      & h4 {
+        font-weight: 500;
+      }
+      & h2 {
+        background-image: linear-gradient(
+          to bottom,
+          $color-primary-dark,
+          $color-primary-light
+        );
+        display: inline-block;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+/*=========KEGITATAN KAMI==========*/
+
 /*=========Acara BGDC==========*/
 
 .section-acara-bgdc {
@@ -7,7 +76,14 @@
   background-repeat: no-repeat;
   background-position: bottom;
   position: relative;
-  padding: 20rem 55rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 20rem;
+
+  @include respond(tab-port) {
+    padding-bottom: 15rem;
+  }
 
   & .acara-bgdc {
     display: flex;
@@ -17,25 +93,23 @@
     font-family: "Ubuntu";
     & h2,
     & h4 {
-      color: $color-text-heading;
+      color: $color-text-dark;
     }
     & p {
-      color: $color-text-paragraph;
+      color: $color-text-light;
     }
     & h3 {
-      color: $color-text-heading;
+      color: $color-text-dark;
       font-weight: 500;
     }
 
     /* Acara BGDC container (foto dan judul acara */
     & .card-list {
       margin: 10rem 0;
-      align-self: flex-start;
+      align-self: center;
       & .card-container {
         display: flex;
         width: inherit;
-        justify-self: flex-start;
-        align-self: flex-start;
 
         &:not(:last-child) {
           margin-bottom: 4rem;
@@ -57,7 +131,7 @@
           & p {
             letter-spacing: 2px;
             font-weight: 500;
-            color: $color-text-heading;
+            color: $color-text-dark;
           }
 
           &__tag {
@@ -78,7 +152,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      width: 50%;
+      @include respond(tab-port) {
+        width: 80%;
+      }
       &__list {
         display: flex;
         flex-direction: row;
@@ -111,6 +188,9 @@
       justify-content: space-evenly;
       & img {
         width: 15rem;
+        &:not(:last-child) {
+          margin-right: 3rem;
+        }
       }
     }
   }
@@ -125,10 +205,21 @@
   flex-direction: column;
   align-items: center;
   padding: 5rem 25rem;
-  color: $color-text-paragraph;
+  color: $color-text-light;
   background-color: $background-grayish;
+
+  @include respond(tab-land) {
+    padding: 5rem 15rem;
+  }
+  @include respond(tab-port) {
+    padding: 5rem 10rem;
+  }
+
+  @include respond(phone) {
+    padding: 5rem 5rem;
+  }
   & .heading-2 {
-    color: $color-text-heading;
+    color: $color-text-dark;
   }
 
   &__head {
@@ -150,26 +241,58 @@
     align-items: center;
     justify-content: center;
 
+    @include respond(phone) {
+      flex-direction: column;
+      text-align: center;
+    }
+
     &--reverse {
       flex-direction: row-reverse;
       & .section-join__content {
         margin-left: 0rem !important;
         margin-right: 8rem !important;
       }
+      @include respond(phone) {
+        flex-direction: column;
+      }
     }
 
     & img {
-      width: 40%;
+      width: 50rem;
 
       background-size: cover;
+      @include respond(tab-land) {
+        width: 40rem;
+      }
+      @include respond(tab-port) {
+        width: 35rem;
+      }
     }
     & .section-join__content {
       margin-left: 8rem;
+      @include respond(phone) {
+        margin-left: 0;
+      }
+      & h2 {
+        @include respond(phone) {
+          margin-top: 3rem;
+        }
+      }
       & p {
-        padding-right: 25rem;
+        padding-right: 5rem;
+
+        @include respond(tab-port) {
+          padding-right: 0rem;
+        }
+        @include respond(phone) {
+          padding-right: 0rem;
+        }
       }
       & > *:not(:last-child) {
         margin-bottom: 3rem;
+        @include respond(phone) {
+          margin-bottom: 5rem;
+        }
       }
     }
   }
@@ -204,13 +327,13 @@
           justify-content: center;
           & .profile-name {
             font-weight: 600;
-            color: $color-text-paragraph;
+            color: $color-text-light;
             font-size: $default-font-size;
           }
 
           & .profile-jabatan {
             font-weight: 400;
-            color: $color-text-paragraph;
+            color: $color-text-light;
             font-size: $default-font-size;
           }
         }
