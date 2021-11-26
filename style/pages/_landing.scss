@@ -2,26 +2,26 @@
 .section-kegiatan-kami {
   text-align: center;
   margin: 0 auto;
-  width: 80%;
-  @include respond(tab-port) {
-    width: 90%;
-  }
+  max-width: 1440px;
+
   & .section-header > p {
     margin-top: 2rem;
   }
   & h2 {
-    color: $color-text-dark;
+    color: $dark-gray;
   }
   & h4 {
-    color: $color-text-dark;
+    color: $dark-gray;
   }
   & p {
-    color: $color-text-light;
+    color: $lighter-gray;
   }
+
   & .section-content {
     display: grid;
     width: inherit;
     margin: 10rem auto;
+    padding: 0 20%;
     gap: 8rem;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
@@ -79,7 +79,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 0;
-  padding-bottom: 20rem;
+  padding-bottom: 10%;
 
   @include respond(tab-port) {
     padding-bottom: 15rem;
@@ -91,15 +91,17 @@
     justify-content: center;
     align-items: center;
     font-family: "Ubuntu";
+    max-width: 1440px;
+    margin: 0 auto;
     & h2,
     & h4 {
-      color: $color-text-dark;
+      color: $dark-gray;
     }
     & p {
-      color: $color-text-light;
+      color: $lighter-gray;
     }
     & h3 {
-      color: $color-text-dark;
+      color: $dark-gray;
       font-weight: 500;
     }
 
@@ -131,7 +133,7 @@
           & p {
             letter-spacing: 2px;
             font-weight: 500;
-            color: $color-text-dark;
+            color: $dark-gray;
           }
 
           &__tag {
@@ -196,17 +198,20 @@
   }
 }
 /*======END Acara BGDC==========*/
-
+.section-background {
+  width: 100vw;
+  background-color: $white-gray;
+}
 /*======JOIN SECTION==========*/
 .section-join {
   font-family: "Ubuntu", sans-serif;
-  width: 100%;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5rem 25rem;
-  color: $color-text-light;
-  background-color: $background-grayish;
+  margin: 0 auto;
+  color: $lighter-gray;
 
   @include respond(tab-land) {
     padding: 5rem 15rem;
@@ -219,7 +224,7 @@
     padding: 5rem 5rem;
   }
   & .heading-2 {
-    color: $color-text-dark;
+    color: $dark-gray;
   }
 
   &__head {
@@ -327,13 +332,13 @@
           justify-content: center;
           & .profile-name {
             font-weight: 600;
-            color: $color-text-light;
+            color: $lighter-gray;
             font-size: $default-font-size;
           }
 
           & .profile-jabatan {
             font-weight: 400;
-            color: $color-text-light;
+            color: $lighter-gray;
             font-size: $default-font-size;
           }
         }

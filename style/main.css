@@ -47,6 +47,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -245,7 +246,7 @@ html {
 
 .nav {
   width: 100%;
-  height: 4rem;
+  height: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,12 +258,14 @@ html {
           align-items: center;
   position: fixed;
   z-index: 1;
-  padding: 4rem 7rem;
+  padding: 0 30rem;
+  background-color: white;
 }
 
-.nav__brand__text {
-  text-decoration: none;
-  color: white;
+.nav__brand img {
+  width: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .nav__list {
@@ -272,71 +275,15 @@ html {
 
 .nav__list__item {
   display: inline-block;
-  color: white;
+}
+
+.nav__list__item a {
+  text-decoration: none;
+  color: #494949;
 }
 
 .nav__list__item:not(:last-child) {
   margin-right: 5rem;
-}
-
-.navigasi {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  margin-right: 25%;
-  margin-left: 15%;
-}
-
-.Navlist :link {
-  text-decoration: none;
-  color: black;
-}
-
-.Navlist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.AboutUs {
-  padding-right: 10%;
-}
-
-.Events {
-  padding-right: 10%;
-}
-
-.Products {
-  padding-right: 10%;
-}
-
-.Blog {
-  padding-right: 10%;
-}
-
-.Registration {
-  padding-right: 10%;
-}
-
-.ContactUs {
-  padding-right: 10%;
 }
 
 .header {
@@ -365,6 +312,134 @@ html {
   width: 35%;
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
+}
+
+.footer {
+  width: 100%;
+  background-color: #3e3e3e;
+  padding: 7rem 25rem;
+  color: white;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__content img {
+  height: 6.6rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__detail > *:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.footer__BGDC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+}
+
+.footer__BGDC h1 {
+  font-size: 2.6rem;
+}
+
+.footer__BGDC h2 {
+  font-size: 1.4rem;
+}
+
+.footer__BGDC img {
+  width: 8.5rem;
+  margin-right: 1rem;
+}
+
+.footer__address {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
+.footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.4rem;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__others {
+  margin-top: 7rem;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__others p {
+  font-size: 1.4rem;
+}
+
+.footer__soc-med {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__soc-med img {
+  width: 2.2rem;
+}
+
+.footer__soc-med a:not(:last-child) {
+  margin-right: 1rem;
 }
 
 .section-about {
@@ -464,13 +539,7 @@ html {
 .section-kegiatan-kami {
   text-align: center;
   margin: 0 auto;
-  width: 80%;
-}
-
-@media only screen and (max-width: 56.25em) {
-  .section-kegiatan-kami {
-    width: 90%;
-  }
+  max-width: 1440px;
 }
 
 .section-kegiatan-kami .section-header > p {
@@ -494,6 +563,7 @@ html {
   display: grid;
   width: inherit;
   margin: 10rem auto;
+  padding: 0 20%;
   gap: 8rem;
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -557,7 +627,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 0;
-  padding-bottom: 20rem;
+  padding-bottom: 10%;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -581,6 +651,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Ubuntu";
+  max-width: 1440px;
+  margin: 0 auto;
   /* Acara BGDC container (foto dan judul acara */
 }
 
@@ -741,10 +813,15 @@ html {
 }
 
 /*======END Acara BGDC==========*/
+.section-background {
+  width: 100vw;
+  background-color: #f9f9f9;
+}
+
 /*======JOIN SECTION==========*/
 .section-join {
   font-family: "Ubuntu", sans-serif;
-  width: 100%;
+  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,8 +833,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 5rem 25rem;
+  margin: 0 auto;
   color: #5a5a5a;
-  background-color: #f9f9f9;
 }
 
 @media only screen and (max-width: 75em) {
