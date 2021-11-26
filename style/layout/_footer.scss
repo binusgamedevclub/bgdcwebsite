@@ -1,9 +1,11 @@
 .footer {
   width: 100%;
   background-color: $darker-gray;
-  padding: 7rem 25rem;
+  padding: 7rem 10vw;
   color: white;
-
+  @include respond(phone) {
+    padding: 7rem 5vw;
+  }
   &__content {
     display: flex;
     width: 100%;
@@ -47,7 +49,9 @@
     flex-direction: column;
     font-size: 1.4rem;
     height: 100%;
-    justify-content: space-between;
+    line-height: 2.5rem;
+    margin-right: 1.5rem;
+    // justify-content: space-between;
     & a {
       color: white;
       text-decoration: none;
