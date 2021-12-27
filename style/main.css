@@ -734,6 +734,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   width: inherit;
+  cursor: pointer;
 }
 
 .section-acara-bgdc .acara-bgdc .card-list .card-container:not(:last-child) {

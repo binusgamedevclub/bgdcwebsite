@@ -112,7 +112,7 @@
       & .card-container {
         display: flex;
         width: inherit;
-
+        cursor: pointer;
         &:not(:last-child) {
           margin-bottom: 4rem;
         }
