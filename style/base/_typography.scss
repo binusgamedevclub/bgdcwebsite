@@ -81,24 +81,13 @@ html {
 
 .heading__4 {
   font-size: $medium-low-font-size;
-  //   line-height: 1.05px;
 }
 
 .heading__5 {
-  color: white;
-  text-shadow: $header-name-text-shadow;
   font-size: $default-font-size;
-  letter-spacing: 9%;
 }
 
 .paragraph-default {
-  font-family: "Inter", sans-serif;
-  font-size: $default-font-size;
-  font-weight: 400;
-  line-height: 166%;
-  letter-spacing: 0.2rem;
-}
-.paragraph-default-2 {
   font-family: "Ubuntu", sans-serif;
   font-size: $default-font-size;
   font-weight: 400;
