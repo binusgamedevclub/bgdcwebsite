@@ -1,11 +1,11 @@
 .button-primary {
-  text-decoration: none;
-  background: linear-gradient(to bottom, #ffb341, #ffd644);
-  color: white;
-  border-radius: 4rem;
-  padding: 1.2rem 2.5rem;
-
-  @include respond(phone) {
-    padding: 1.2rem 2rem;
-  }
+	text-decoration: none;
+	background: linear-gradient(to bottom, #ffb341, #ffd644);
+	color: white;
+	border-radius: 4rem;
+	padding: 1.2rem 2.5rem;
+	display: inline-block;
+	@include respond(phone) {
+		padding: 1.2rem 2rem;
+	}
 }

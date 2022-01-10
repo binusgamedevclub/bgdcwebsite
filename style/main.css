@@ -229,6 +229,7 @@ html {
   color: white;
   border-radius: 4rem;
   padding: 1.2rem 2.5rem;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -250,7 +251,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   padding: 0 10vw;
   background-color: #f6f6f6;
 }
@@ -663,14 +664,83 @@ html {
 }
 
 /*=========KEGITATAN KAMI==========*/
-/*=========Acara BGDC==========*/
-.section-acara-bgdc {
-  width: 100%;
-  background: url("../assets/img/landing/bg-stuff-acara-bot.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
+/*======Game Kami========*/
+.section-game-kami {
+  text-align: center;
+  margin: 0 auto;
+  -webkit-clip-path: polygon(0 0, 20% 3%, 100% 0, 100% 100%, 80% 97%, 0 100%);
+          clip-path: polygon(0 0, 20% 3%, 100% 0, 100% 100%, 80% 97%, 0 100%);
+  background-color: #f9f9f9;
+  padding: 10% 5rem;
+}
+
+.section-game-kami .game-kami-header {
+  margin-bottom: 15rem;
+}
+
+.section-game-kami h3,
+.section-game-kami h2 {
+  color: #494949;
+}
+
+.section-game-kami p {
+  color: #5a5a5a;
+}
+
+.section-game-kami h2 + p {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.section-game-kami .game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15rem;
+  max-width: 100rem;
+  margin-inline: auto;
+}
+
+.section-game-kami .game-details {
+  max-width: 50rem;
+  background-color: white;
+  padding: 5rem;
   position: relative;
+  border-radius: 2rem;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+.section-game-kami .game-details--reverse {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  margin-left: auto;
+}
+
+.section-game-kami .game-desc {
+  margin-bottom: 2.5rem;
+}
+
+.section-game-kami .game-desc h3 {
+  margin-bottom: 2.5rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.section-game-kami .misc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+.section-game-kami .misc-kiri {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -678,7 +748,132 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-game-kami .misc-kanan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.section-game-kami .project-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.section-game-kami .project-name {
+  color: #fec54d;
+}
+
+.section-game-kami .misc-kanan img {
+  width: 10rem;
+}
+
+.section-game-kami .icon {
+  width: 8rem;
+  border-radius: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.section-game-kami .game-illust {
+  position: absolute;
+  top: 0rem;
+  right: 0;
+  -webkit-transform: translate(80%, -10%);
+          transform: translate(80%, -10%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-game-kami .game-illust__item {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+.section-game-kami .game-illust__item--top {
+  border-radius: 2.2rem;
+  width: 25rem;
+}
+
+.section-game-kami .game-illust__item--left-top {
+  border-radius: 2.2rem;
+  -webkit-transform: translate(-260%, 65%);
+          transform: translate(-260%, 65%);
+  width: 25rem;
+  left: 0;
+}
+
+.section-game-kami .game-illust__item--bottom {
+  border-radius: 3rem;
+  width: 35rem;
+  -webkit-transform: translate(15%, -10%);
+          transform: translate(15%, -10%);
+  z-index: -1;
+}
+
+.section-game-kami .game-illust__item--right-bottom {
+  border-radius: 3rem;
+  width: 35rem;
+  -webkit-transform: translate(15%, 25%);
+          transform: translate(15%, 25%);
+  z-index: -1;
+}
+
+.section-game-kami .game-illust--reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  left: -3rem;
+  top: 3rem;
+}
+
+.section-game-kami .game-illust--reverse .game-illust__item {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.section-game-kami .game-illust--reverse .game-illust__item--top {
+  -webkit-transform: translate(-80%, -30%);
+          transform: translate(-80%, -30%);
+}
+
+/*======Game Kami========*/
+/*=========Acara BGDC==========*/
+.section-acara-bgdc {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10%;
   padding-bottom: 10%;
 }
 
@@ -866,15 +1061,11 @@ html {
 }
 
 /*======END Acara BGDC==========*/
-.section-background {
-  width: 100vw;
-  background-color: #f9f9f9;
-}
-
 /*======JOIN SECTION==========*/
 .section-join {
   font-family: "Ubuntu", sans-serif;
-  max-width: 1440px;
+  -webkit-clip-path: polygon(20% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(20% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -885,26 +1076,27 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5rem 25rem;
+  padding: 10% 25rem;
   margin: 0 auto;
   color: #5a5a5a;
+  background-color: #f9f9f9;
 }
 
 @media only screen and (max-width: 75em) {
   .section-join {
-    padding: 5rem 15rem;
+    padding: 10% 15rem;
   }
 }
 
 @media only screen and (max-width: 56.25em) {
   .section-join {
-    padding: 5rem 10rem;
+    padding: 10% 10rem;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .section-join {
-    padding: 5rem 5rem;
+    padding: 10% 5rem;
   }
 }
 
@@ -1095,4 +1287,6 @@ html {
   color: #5a5a5a;
   font-size: 1.8rem;
 }
+
+/*======END JOIN SECTION==========*/
 /*# sourceMappingURL=main.css.map */

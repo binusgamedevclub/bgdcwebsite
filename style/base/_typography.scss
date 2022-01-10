@@ -1,98 +1,97 @@
 @font-face {
-  font-family: "lemonmilk";
-  src: url(../fonts/LemonMilkbold.otf) format("truetype");
-  font-weight: bold;
-  font-style: normal;
+	font-family: "lemonmilk";
+	src: url(../fonts/LemonMilkbold.otf) format("truetype");
+	font-weight: bold;
+	font-style: normal;
 }
 @font-face {
-  font-family: "lemonmilk";
-  src: url(../fonts/LemonMilk.otf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "lemonmilk";
+	src: url(../fonts/LemonMilk.otf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: "lemonmilk";
-  src: url(../fonts/LemonMilkbolditalic.otf) format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "lemonmilk";
-  src: url(../fonts/LemonMilkitalic.otf) format("truetype");
-  font-weight: normal;
-  font-style: italic;
+	font-family: "lemonmilk";
+	src: url(../fonts/LemonMilkbolditalic.otf) format("truetype");
+	font-weight: bold;
+	font-style: italic;
 }
 
 @font-face {
-  font-family: "lemonmilk";
-  src: url(../fonts/LemonMilklight.otf) format("truetype");
-  font-weight: lighter;
-  font-style: normal;
+	font-family: "lemonmilk";
+	src: url(../fonts/LemonMilkitalic.otf) format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "lemonmilk";
+	src: url(../fonts/LemonMilklight.otf) format("truetype");
+	font-weight: lighter;
+	font-style: normal;
 }
 @font-face {
-  font-family: "lemonmilk";
-  src: url(../fonts/LemonMilklightitalic.otf) format("truetype");
-  font-weight: lighter;
-  font-style: italic;
+	font-family: "lemonmilk";
+	src: url(../fonts/LemonMilklightitalic.otf) format("truetype");
+	font-weight: lighter;
+	font-style: italic;
 }
 
 html {
-  font-family: "Ubuntu", "lemonmilk", "Inter", sans-serif;
+	font-family: "Ubuntu", "lemonmilk", "Inter", sans-serif;
 }
 
 .nav {
-  &__brand {
-    &__text {
-      font-size: $medium-font-size;
-    }
-  }
-  &__list {
-    &__item {
-      font-size: $default-font-size;
-      font-weight: 400;
-    }
-  }
+	&__brand {
+		&__text {
+			font-size: $medium-font-size;
+		}
+	}
+	&__list {
+		&__item {
+			font-size: $default-font-size;
+			font-weight: 400;
+		}
+	}
 }
 
 .heading__1 {
-  font-size: $large-font-size;
-  line-height: 10rem;
+	font-size: $large-font-size;
+	line-height: 10rem;
 }
 .heading__2 {
-  font-size: $medium-large-font-size;
+	font-size: $medium-large-font-size;
 }
 
 .heading__3 {
-  font-size: $medium-font-size;
-  //   line-height: 1.05px;
+	font-size: $medium-font-size;
 
-  &--underline {
-    &::after {
-      content: "";
-      display: block;
-      width: 25.5rem;
-      height: 10px;
-      background: linear-gradient(85.98deg, #ff6b00 11.55%, #ffb800 91.18%);
-      border-radius: 70px;
-    }
-  }
+	&--underline {
+		&::after {
+			content: "";
+			display: block;
+			width: 25.5rem;
+			height: 10px;
+			background: linear-gradient(85.98deg, #ff6b00 11.55%, #ffb800 91.18%);
+			border-radius: 70px;
+		}
+	}
 }
 
 .heading__4 {
-  font-size: $medium-low-font-size;
+	font-size: $medium-low-font-size;
 }
 
 .heading__5 {
-  font-size: $default-font-size;
+	font-size: $default-font-size;
 }
 
 .paragraph-default {
-  font-family: "Ubuntu", sans-serif;
-  font-size: $default-font-size;
-  font-weight: 400;
+	font-family: "Ubuntu", sans-serif;
+	font-size: $default-font-size;
+	font-weight: 400;
 }
 
 .button-primary {
-  font-size: $default-font-size;
+	font-size: $default-font-size;
 }
