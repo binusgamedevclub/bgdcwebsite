@@ -1,28 +1,28 @@
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
 }
 
 html {
-  //default 62.5%
-  //50%
-  font-size: $base-default-font-size;
+	//default 62.5%
+	//50%
+	font-size: $base-default-font-size;
 
-  @include respond(tab-land) {
-    font-size: 45%;
-  }
-  @include respond(tab-land) {
-    font-size: 40%;
-  }
-  @include respond(phone) {
-    font-size: 30%;
-  }
+	@include respond(tab-land) {
+		font-size: 45%;
+	}
+	@include respond(tab-port) {
+		font-size: 40%;
+	}
+	@include respond(phone) {
+		font-size: 30%;
+	}
 }
 body {
-  box-sizing: border-box;
-  // background-color: $white-gray;
-  overflow-x: hidden;
+	box-sizing: border-box;
+	// background-color: $white-gray;
+	overflow-x: hidden;
 }
